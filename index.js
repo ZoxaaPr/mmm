@@ -31,9 +31,7 @@ app.use(
 //   next();
 // });
 app.use("/api", router);
-app.get("/", (res)=>{
-  res.json("dwd");
-});
+app.get("/", "dwdwd");
 
 const URI = process.env.MONGODB_URL;
 mongoose.connect(
