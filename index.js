@@ -31,6 +31,15 @@ app.use(
 //   next();
 // });
 app.use("/api", router);
+app.get("/", (res)=>{
+  res.status(200).json({
+    success: true,
+    products,
+    productCount,
+    resultPage,filteredProductsCount
+
+  });
+});
 
 const URI = process.env.MONGODB_URL;
 mongoose.connect(
