@@ -32,13 +32,7 @@ app.use(
 // });
 app.use("/api", router);
 app.get("/", (res)=>{
-  res.status(200).json({
-    success: true,
-    products,
-    productCount,
-    resultPage,filteredProductsCount
-
-  });
+  res.json("dwd");
 });
 
 const URI = process.env.MONGODB_URL;
